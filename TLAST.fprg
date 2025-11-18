@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="TLAST"/>
+        <attribute name="authors" value="ASUS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-11-18 09:12:51 PM"/>
+        <attribute name="created" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMS0xODswODoxNTo0OCBQTTsyNjQy"/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQjJUOFMzM1Y7MjAyNS0xMS0xODswOToxMjo1MSBQTTsxOzI3NDI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="p, perintah, kmk, judul, penulis, dedlain, keterangan, status" type="String" array="False" size=""/>
+            <declare name="kesulitan, sisahari" type="Integer" array="False" size=""/>
+            <input variable="p"/>
+            <if expression="p = &quot;Add Task&quot;">
+                <then>
+                    <call expression="AddTask"/>
+                </then>
+                <else/>
+            </if>
+        </body>
+    </function>
+    <function name="AddTask" type="String" variable="status">
+        <parameters>
+            <parameter name="a" type="String" array="False"/>
+            <parameter name="b" type="String" array="False"/>
+            <parameter name="c" type="String" array="False"/>
+            <parameter name="d" type="String" array="False"/>
+            <parameter name="e" type="String" array="False"/>
+            <parameter name="f" type="String" array="False"/>
+            <parameter name="g" type="Integer" array="False"/>
+            <parameter name="h" type="Integer" array="False"/>
+            <parameter name="i" type="String" array="False"/>
+        </parameters>
+        <body>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <input variable="d"/>
+            <input variable="e"/>
+            <input variable="f"/>
+            <input variable="g"/>
+            <input variable="i"/>
+        </body>
+    </function>
+    <function name="UpdateTask" type="String" variable="status">
+        <parameters>
+            <parameter name="kmk" type="String" array="False"/>
+            <parameter name="s" type="String" array="False"/>
+        </parameters>
+        <body>
+            <input variable="kmk"/>
+            <input variable="s"/>
+            <declare name="status" type="String" array="False" size=""/>
+            <assign variable="status" expression="kmk &amp;&quot;|&quot;&amp; s"/>
+        </body>
+    </function>
+</flowgorithm>
